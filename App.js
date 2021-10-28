@@ -14,6 +14,7 @@ import DashBoard from './components/screens/DashBoard';
 // navigator
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import help from './components/screens/help';
 
 
 
@@ -32,6 +33,8 @@ export default function App() {
         <Stack.Screen name="ForgetScreen" component={ForgetPassword} />
         <Stack.Screen name="ForgetPasswordSuccessFul" component={ForgetPasswordSuccessFul} />
         <Stack.Screen name="Dashboard" component={DashBoard} />
+        <Stack.Screen name ="help" component ={help}
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
